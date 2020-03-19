@@ -1,0 +1,43 @@
+.TH "LOUNGER\-ISONLINE" "3" "March 2020" "" ""
+.SH "NAME"
+\fBlounger-isonline\fR \- check if a database is online
+.SH SYNOPSIS
+.P
+.RS 2
+.nf
+lounger\.commands\.isonline(url)
+The last part is a detailed description of how the command works:
+.fi
+.RE
+.SH DESCRIPTION
+.P
+check if a CouchDB / PouchDB database is available on the currentnetwork\.
+.P
+.RS 2
+.nf
+url:
+The url must be a `String` and must be a url using the http or httpsprotocol\.
+The command returns a promise\. The promise returns an Object\. 
+The key of the Object is the provided url and the values are of type `Boolean`\.
+`true` indicates an online CouchDB / PouchDB node\.
+.fi
+.RE
+.TH "LOUNGER\-ISONLINE" "1" "March 2020" "" ""
+.SH "NAME"
+\fBlounger-isonline\fR \- check if a database is online
+.SH SYNOPSIS
+.P
+.RS 2
+.nf
+lounger isonline <url> [\-\-json]
+.fi
+.RE
+.SH DESCRIPTION
+.P
+.RS 2
+.nf
+<url>:Check if a database node is currently online or available\.
+`isonline` prints the result as human readable output\. JSON output is also supported by passing the `\-\-json` flag\.
+.fi
+.RE
+
